@@ -1,0 +1,89 @@
+.home-welc {
+  height: calc(100vh - var(--navbar-height));
+
+  color: #000;
+
+  background: url("../../../img/work-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-welc > .bs-type-container {
+  height: 100%;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.home__title {
+  font-size: 2rem;
+}
+
+.home__subtitle {
+  line-height: 1.75;
+}
+
+.home-welc-cont {
+  display: flex;
+}
+
+.home-welc-cont-text {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.home-welc-icon {
+  color: #000;
+  font-size: 1.75rem;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width: 576px) {
+  .home-welc {
+    background: url("../../../img/work.jpg");
+    background-size: cover;
+    background-position: center;
+
+    color: var(--white);
+  }
+
+  .home-welc > .bs-type-container {
+    text-align: right;
+
+    align-items: flex-end;
+
+    background-color: transparent;
+  }
+
+  .home__title {
+    font-size: 2.5rem;
+  }
+
+  .home-welc-icon {
+    color: var(--white);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home__title {
+    font-size: 3rem;
+  }
+
+  .home__subtitle {
+    font-size: 1.875rem;
+  }
+
+  .home-welc-cont {
+    height: 2.5rem;
+    align-items: center;
+  }
+}
